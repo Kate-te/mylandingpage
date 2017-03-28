@@ -1,0 +1,378 @@
+html {height: 100%;}
+
+@font-face {
+  font-family: GothamRoundedBold;
+  src: local("GothamRoundedBold"),
+  url(fonts/GothamRoundedBold_21016.ttf);
+}
+
+@font-face {
+  font-family: GothamRoundedBook;
+  src: local("GothamRoundedBook"),
+  url(fonts/GothamRoundedBook_21018.ttf);
+}
+
+@font-face {
+  font-family: GothamRoundedLight;
+  src: local("GothamRoundedLight"),
+  url(fonts/GothamRoundedLight_21020.ttf);
+}
+
+@font-face {
+  font-family: GothamRoundedMedium;
+  src: local("GothamRoundedMedium"),
+  url(fonts/GothamRoundedMedium_21022.ttf);
+}
+
+ol,ul {list-style: none;}
+
+*{
+	margin: 0;
+	padding: 0;
+	outline: none;
+}
+
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: table;
+}
+.clearfix:after { clear: both; }
+
+a, a:hover {text-decoration: none;}
+
+.container {
+	width: 1280px;
+	margin: 0 auto;
+
+}
+
+#header{
+	position: absolute;
+	left: 0;
+	right: 0;
+	width: 100%;
+	padding: 13px 0 0 0;
+	letter-spacing: 3px;
+}
+
+#logo{
+	position: relative;
+    top: 18px;
+    left: 8px;
+}
+
+.nav, .soc{
+	text-align: center;
+}
+.nav li{
+	display: inline-block;
+	margin-right: 80px;
+}
+
+.nav li:last-child, .soc li:last-child{
+	margin-right: 0px;
+}
+.nav a{
+	text-transform: uppercase;
+	font: 15px GothamRoundedBold, sans-serif;
+	color: #fff;
+}
+
+#first{
+	height: 740px;
+	background: #462e3b url(img/pict.jpg) no-repeat center bottom;
+	background-size: cover;
+}
+
+#first .container{
+	padding-top: 333px;
+	text-align: center;
+	color: #fff;
+}
+
+#first .container h1{
+	font: 35px/35px GothamRoundedBold, sans-serif;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+}
+
+#first .container h4{
+    font: 17px/17px GothamRoundedBook, sans-serif;
+    margin-bottom: 41px;
+    letter-spacing: 3px;
+}
+
+.btn{
+	background-color: #16a085;
+    padding: 18px 30px;
+    text-transform: uppercase;
+    font: 12px/12px GothamRoundedBook, sans-serif;
+    cursor: pointer;
+    border-radius: 5px;
+    color: #fff;
+	letter-spacing: 2px;
+}
+
+
+.soc li{
+	display: inline-block;
+	margin-right: 8px;
+}
+
+#networks{
+	margin: 0 auto;
+	position: absolute;
+	top: 691px;
+	left: 0;
+	right: 0px;
+	width: 100%;
+}
+
+#second{
+	height: 492px;
+	background: #f5f6f7 url(img/iphone.png) no-repeat center bottom;
+	background-size: cover;
+}
+
+#left{
+	padding-top: 110px;
+	width: 425px;
+	padding-right: 600px;
+}
+
+h3 {
+	font: 16px/20px GothamRoundedBold, sans-serif;
+	margin-bottom: 41px;
+	text-transform: uppercase;
+	color: #16a085;
+	letter-spacing: 4px;
+}
+
+#left p{
+	font: 12px/24px GothamRoundedLight, sans-serif;
+	margin-bottom: 58px;
+
+}
+
+#left .btn{
+    padding: 18px 43px;
+}
+
+#third{
+	height: 558px;
+	background: #fff;
+	background-size: cover;
+}
+
+#right{
+    padding-top: 143px;
+    width: 425px;
+    padding-left: 678px;
+}
+
+#right h3{
+	margin-bottom: 35px;
+}
+
+#right p{
+    font: 12px/22px GothamRoundedLight, sans-serif;
+    margin-bottom: 55px;
+}
+
+#right .btn{
+	padding: 18px 45px;
+}
+
+#phone{
+	padding-top: 142px;
+	position: absolute;
+	width: 100%;
+	text-align: center;
+}
+
+#phone img{
+	padding-right: 720px;
+}
+
+#pages{
+    margin-top: 60px;
+    font: 13px GothamRoundedBold, sans-serif;
+    letter-spacing: 1px;
+}
+
+.scroll li{
+    display: inline-block;
+    font: 30px GothamRoundedBook, sans-serif;
+    margin-top: -5px;
+}
+
+#fourth{
+	height: 485px;
+	background: #f5f6f7;
+	background-size: cover;
+}
+
+#logogreen{
+	position: relative;
+	top: 161px;
+	margin-left: 185px;
+	
+}
+
+#fourth h3{
+	margin-top: 179px;
+	margin-bottom: 17px;
+
+}
+
+#our{
+	text-align: center;
+	padding-right: 835px;
+}
+
+#our p{
+	width: 150px;
+    padding-left: 135px;
+    font: 10px/12px GothamRoundedBook, sans-serif;
+    letter-spacing: 1px;
+}
+
+#our h3{
+	color: #000;
+}
+
+#pictures img:first-child{
+	margin-right: 20px;
+}
+
+#pictures{
+	position: relative;
+	top: -233px;
+	left: 385px;
+}
+
+#fourth .scroll{
+	position: relative;
+    top: -232px;
+    left: 1110px;
+}
+
+#fifth{
+	height: 790px;
+	background: #222 url(img/nails.png) no-repeat center bottom;
+	background-size: cover;
+}
+
+#fifth .container{
+	padding-top: 345px;
+	text-align: center;
+	color: #fff;
+}
+
+#fifth input{
+	font: 15px GothamRoundedMedium, sans-serif;
+    text-transform: uppercase;
+    padding-left: 22px;
+    margin-right: -5px;
+    height: 56px;
+    width: 255px;
+    letter-spacing: 3px;
+}
+
+#fifth h2{    
+	margin-bottom: 29px;
+    text-transform: uppercase;
+    font: 24px GothamRoundedMedium, sans-serif;
+    letter-spacing: 4px;
+}
+
+#fifth .btn{
+    padding: 33px 20px 12px 20px;
+    position: relative;
+    top: 9px;
+}
+
+#download{
+	height: 395px;
+	background: #f5f6f7;
+}
+
+#download .container{
+	padding-top: 87px;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+#download .container h2{
+	font: 20px/20px GothamRoundedBold, sans-serif;
+	margin-bottom: 8px;
+	text-transform: uppercase;
+}
+
+#download .container p{
+	font: 12px/22px GothamRoundedBook, sans-serif;
+    margin: 0 auto;
+    margin-bottom: 22px;
+    width: 900px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+#btn1{
+    margin-right: 29px;
+    margin-left: -10px;
+    padding-left: 44px;
+}
+
+.btnd{
+    padding: 19px 40px 18px 55px;
+    font: 15px GothamRoundedBook, sans-serif;
+    letter-spacing: 3px;
+    background-color: #1abc9c;
+}
+
+.btnd img{
+	position: relative;
+    top: 22px;
+    left: 50px;
+}
+
+#footer .container{
+	height: 130px;
+	background: #fff;
+}
+
+#footer .container li{
+	display: inline-block;
+    padding: 0 5px;
+    border-right: solid 2px #16a085;
+    margin-top: 45px;
+    margin-bottom: 20px;
+    font: 14px GothamRoundedBold, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #000;
+}
+
+#footer .container li:last-child{
+	padding: 0;
+	border: none;
+}
+
+#footer .container li:first-child{
+    margin-left: 120px;
+}
+
+#logofooter{
+    position: relative;
+    top: -68px;
+    left: 1092px;
+}
+
+#footer h5{    
+	font: 12px GothamRoundedBold, sans-serif;
+    margin-left: 127px;
+    letter-spacing: 3px;
+}
