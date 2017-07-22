@@ -148,7 +148,7 @@ h3 {
 }
 
 .design{
-	background: #f5f6f7 url(img/phone.png) no-repeat 13% 100%;
+	background: #fff url(img/phone.png) no-repeat calc( 50% - 349px) 100%;
 }
 
 .right{
@@ -175,10 +175,11 @@ h3 {
 	padding: 18px 45px;
 }
 
-.slider a{
+.design__slider a, .community__slider a{
 	font-size: 24px;
     font-weight: bold;
     color: #000;
+    margin-right: 7px;
 }
 
 .pages{
@@ -189,22 +190,26 @@ h3 {
 }
 
 
-#fourth{
-	height: 485px;
+.community{
 	background: #f5f6f7;
-	background-size: cover;
 }
 
-#logogreen{
-	top: 161px;
-	margin-left: 185px;
-	
+.community .container{
+        padding: 90px 0 120px;
 }
 
-#fourth h3{
-	margin-top: 179px;
-	margin-bottom: 17px;
+.content{
+    display: flex;
+}
 
+.info{    
+    display: flex;
+    flex-direction: column;
+}
+
+.community__slider{
+    display: flex;
+    margin-left: calc( 50% + 480px);
 }
 
 #our{
