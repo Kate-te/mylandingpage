@@ -22,7 +22,10 @@
 
 ol,ul {list-style: none;}
 
-a, a:hover, li {text-decoration: none;}
+a, a:hover {
+    color: #000;
+    text-decoration: none;
+}
 
 *{
 	margin: 0;
@@ -96,7 +99,8 @@ nav a{
 	background-color: #16a085;
     padding: 18px 30px;
     text-transform: uppercase;
-    font: 12px/12px GothamRoundedBook;
+    font-size: 12px;
+    line-height: 12px;
     cursor: pointer;
     border-radius: 5px;
     color: #fff;
@@ -129,7 +133,7 @@ nav a{
     padding-bottom: 91px;
 }
 
-h3 {
+h3{
 	font: 16px/20px, bold;
 	margin-bottom: 41px;
     text-transform: uppercase;
@@ -147,8 +151,8 @@ h3 {
     padding: 18px 43px;
 }
 
-.design{
-	background: #fff url(img/phone.png) no-repeat calc( 50% - 349px) 100%;
+.design  .container{
+	background: #fff url(img/phone.png) no-repeat 13% 100%;
 }
 
 .right{
@@ -195,129 +199,160 @@ h3 {
 }
 
 .community .container{
-        padding: 90px 0 120px;
+        padding: 90px 0 80px;
 }
 
 .content{
     display: flex;
+    justify-content: space-between;
+    padding: 0px 110px;
+    overflow: scroll;
+}
+
+.content>*{
+    margin: 10px 20px 10px 0;
+}
+
+.content>*:last-child{
+    margin-right: 0;
 }
 
 .info{    
     display: flex;
     flex-direction: column;
+    align-items: center;
+    padding: 30px 55px 0px 10px;
+}
+
+.logogreen{
+    margin-bottom: 15px;
+}
+
+.info h3{
+    margin-bottom: 20px;
+    letter-spacing: 1.5px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.info p{
+    max-width: 170px;
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 10px;
 }
 
 .community__slider{
     display: flex;
-    margin-left: calc( 50% + 480px);
+    margin-left: 88%;
 }
 
-#our{
-	text-align: center;
-	padding-right: 835px;
-}
-
-#our p{
-	width: 150px;
-    padding-left: 135px;
-    font: 10px/12px GothamRoundedBook;
-    letter-spacing: 1px;
-}
-
-#our h3{
-	color: #000;
-}
-
-#pictures img:first-child{
-	margin-right: 20px;
-}
-
-#fifth{
-	height: 790px;
+.subscribe{
 	background: #222 url(img/nails.png) no-repeat center bottom;
 	background-size: cover;
 }
 
-#fifth .container{
-	padding-top: 345px;
-	text-align: center;
-	color: #fff;
+.subscribe .container{
+    text-align: center;
+    padding-top: 345px;
+    color: #fff;
+    padding-bottom: 325px;
 }
 
-#fifth input{
-	font: 15px, normal;
-    text-transform: uppercase;
-    padding-left: 22px;
-    margin-right: -5px;
-    height: 56px;
-    width: 255px;
-    letter-spacing: 3px;
+.subscribe form{
+    display: flex;
+    justify-content: center;
 }
 
-#fifth h2{    
+.subscribe input{
+    padding-left: 20px;
+    padding-right: 5px;
+    height: 60px;
+    width: 280px;
+    letter-spacing: 4px;
+    border-radius: 5px 0 0 5px;
+    border: none;
+}
+
+.subscribe h2{    
 	margin-bottom: 29px;
     text-transform: uppercase;
-    font: 24px, normal;
-    letter-spacing: 4px;
+    font-size: 24px;
+    letter-spacing: 3.5px;
 }
 
-#fifth .btn{
-    padding: 33px 20px 12px 20px;
+.subscribe .btn{
+    padding: 12px 20px;
+    border-radius: 0 5px 5px 0;
 }
 
-#download{
-	height: 395px;
+.download{
 	background: #f5f6f7;
 }
 
-#download .container{
-	padding-top: 87px;
+.download .container{
     text-align: center;
-    letter-spacing: 3px;
+    padding-top: 87px;
+    padding-bottom: 115px;
 }
 
-#download .container h2{
-	font: 20px/20px, bold, sans-serif;
-	margin-bottom: 8px;
-	text-transform: uppercase;
-}
-
-#download .container p{
-	font: 12px/22px GothamRoundedBook;
-    margin: 0 auto;
-    margin-bottom: 22px;
-    width: 900px;
+.download .container h2{
     text-transform: uppercase;
-    letter-spacing: 3px;
+    font-size: 20px;
+    letter-spacing: 2.5px;
+    margin-bottom: 5px;
 }
 
-#btn1{
-    margin-right: 29px;
-    margin-left: -10px;
-    padding-left: 44px;
+.download .container p{
+    max-width: 840px;
+    margin: 0 auto;
+    line-height: 22px;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 42px;
 }
 
-.btnd{
-    padding: 19px 40px 18px 55px;
-    font: 15px GothamRoundedBook;
+.apps{
+    display: flex;
+    justify-content: center;
+}
+
+.download__btn{
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0 0 45px;
+    width: 300px;
+    font-size: 14px;
     letter-spacing: 3px;
     background-color: #1abc9c;
+    display: flex;
+    margin-right: 25px;
+}
+.download__btn:last-child{
+    margin: 0;
+}
+
+.download__btn img{
+    border-radius: 0 5px 5px 0;
 }
 
 footer .container{
-	height: 130px;
-	background: #fff;
+    padding: 45px 110px 40px 120px;
+    display: flex;
+    justify-content: space-between;
 }
+
 
 footer .container li{
 	display: inline-block;
-    padding: 0 5px;
+    padding: 0 7px;
     border-right: solid 2px #16a085;
-    margin-top: 45px;
     margin-bottom: 20px;
-    font: 14px, bold;
+    font-size: 14px;
+    font-weight: bold;
     text-transform: uppercase;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     color: #000;
 }
 
@@ -326,12 +361,7 @@ footer .container li:last-child{
 	border: none;
 }
 
-footer .container li:first-child{
-    margin-left: 120px;
-}
-
 footer h5{    
 	font: 12px, bold;
-    margin-left: 127px;
     letter-spacing: 3px;
 }
